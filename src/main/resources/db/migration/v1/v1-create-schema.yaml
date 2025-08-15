@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-main-schema
+      author: Gureva Anna
+      changes:
+        - sql:
+            dbms: postgresql
+            sql: CREATE SCHEMA main;

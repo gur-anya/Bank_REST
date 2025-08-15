@@ -1,0 +1,62 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-test-users
+      author: Gureva Anna
+      changes:
+        - insert:
+            schemaName: main
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 1
+              - column:
+                  name: name
+                  value: "Test User One"
+              - column:
+                  name: email
+                  value: "user1@example.com"
+              - column:
+                  name: password
+                  value: "$2a$10$vhO/sk88oN1CxEHEsXCT5.zfpx3UkzHJUG3AFwuHLYFqDEP8yVYuq"
+              - column:
+                  name: role
+                  value: "USER"
+        - insert:
+            schemaName: main
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 2
+              - column:
+                  name: name
+                  value: "Test User Two"
+              - column:
+                  name: email
+                  value: "user2@example.com"
+              - column:
+                  name: password
+                  value: "$2a$10$vnkPkItfUTZWK1HuNit8WOMSeLMrnBJizyByRtIJlfUqfNS6ULw4q"
+              - column:
+                  name: role
+                  value: "USER"
+        - insert:
+            schemaName: main
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: 3
+              - column:
+                  name: name
+                  value: "Admin"
+              - column:
+                  name: email
+                  value: "admin@example.com"
+              - column:
+                  name: password
+                  value: "$2a$10$TEMI2ezYtcEftDox3OtObeHqIOUXtm.98VYc9bNfHbNR.L/y.hWc2"
+              - column:
+                  name: role
+                  value: "ADMIN"
